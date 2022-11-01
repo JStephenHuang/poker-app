@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+body {
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+  @apply bg-black text-white
+}
+
+@layer components {
+  .main-button {
+    @apply w-[30%] text-center text-black bg-white p-3 rounded-lg hover:bg-gray-300 ease-in-out duration-150
+  }
+  .signin-bubble {
+    @apply transition-all w-12 h-12 bg-white text-black
+    group-hover:bg-black group-hover:text-white
+    rounded-full grid place-content-center
+  }
+}
+
+
+@layer components {
+  .card {
+    @apply transition text-white absolute w-[20rem] h-[30rem] rounded-lg 
+    bg-white border-[10px] mr-2 border-white hover:z-[30]
+    ease-in-out shadow-gray-800 shadow-lg hover:-translate-y-3
+  }
+
+  .card1 {
+    @apply rotate-[-10deg] left-[38rem] bottom-[9rem]
+  }
+  .card2 {
+    @apply left-[52rem]
+  }
+
+  .card3 {
+    @apply rotate-[10deg] left-[66rem] bottom-[9rem]
+  }
+
+  .card-back1 {
+      @apply bg-[url('./svg/card-back.png')]
+  }
+  .card-back2 {
+    @apply bg-[url('./svg/card-back1.svg')]
+}
+}
+
+@layer components {
+  .spacer {
+    @apply aspect-auto w-full h-full bg-no-repeat bg-center bg-cover
+  }
+  .background1 {
+    @apply bg-[url('./svg/background1.svg')]
+  }
+}
+
