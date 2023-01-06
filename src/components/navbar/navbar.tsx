@@ -1,6 +1,5 @@
 import Logo from "./logo";
 import SignIn from "./singin-button";
-import { useParams } from "react-router-dom";
 
 const Navbar = () => {
   return (
